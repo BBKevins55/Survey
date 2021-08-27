@@ -1,0 +1,87 @@
+<main> 
+    <h1 id="title" class="text-center">Survey</h1>
+    <link rel="stylesheet" href="/home/bradley/Desktop/Survey/Style.css">
+    <p id="description">Please complete</p>
+    <form class="survey-form">
+        <label id="name-label">Name</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="ur name go hur"
+                required
+                />
+        <label id="email-label">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="we will not corrupt ur files"
+                required/>
+        <label id="number-label">Age</label>
+            <input
+                type="number"
+                name="age"
+                id="number"
+                min=0
+                max=99
+                placeholder="die"
+                required/>
+        <div class="form-group">
+        <p>Please select from the list</p>
+            <select id="dropdown"name="role"required>
+                <option disabled selected value>Select role</option>
+                <option value="student">Me</option>
+                <option value="job">You</option>
+                <option value="other">Them</option>
+        </div>
+            <label><input
+                name="user-recommend"
+                value="idk"
+                type="radio"
+                class="input-radio"
+                checked
+                />idk</label>
+            <label><input
+                name="user-recommend"
+                value="wat"
+                type="radio"
+                class="input-radio"
+                />wat</label>
+            <label><input
+                name="user-recommend"
+                value="naw"
+                type="radio"
+                class="input-radio"
+                />naw</label>
+        <div class="form-group">
+         <p>Wat do</p>
+            <label><input
+                name="prefer"
+                value="Yes"
+                type="checkbox"
+                class="input-checkbox"
+                />Yes</label>
+            <label><input
+                name="prefer"
+                value="Also"
+                type="checkbox"
+                class="input-checkbox"
+                />Also yes</label>
+         
+        <div class="form-group">
+            <p>Any suggestions?</p><textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="We are not taking suggestions"
+                ></textarea>
+        </div>
+         
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</main>   
